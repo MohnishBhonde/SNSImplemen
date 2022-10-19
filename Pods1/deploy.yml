@@ -1,1 +1,45 @@
+apiVersion: apps/v1
 
+kind: Deployment
+
+metadata:
+
+  name: sns-deploy
+
+  labels:
+
+    app: web
+
+spec:
+
+  replicas: 1
+
+  selector:
+
+    matchLabels:
+
+      app: web
+
+  template:
+
+    metadata:
+
+      labels:
+
+        app: web
+
+    spec:
+
+      terminationGracePeriodSeconds: 1
+
+      containers:
+
+      - name: sns-pod
+
+        image: mohnishbhonde/sns01:latest
+
+        imagePullPolicy: Always
+
+        ports:
+
+        - containerPort: 8081
