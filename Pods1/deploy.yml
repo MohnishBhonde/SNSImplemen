@@ -36,7 +36,7 @@ spec:
 
       - name: sns-pod
 
-        image: mohnishbhonde/sns01:latest
+        image: mohnishbhonde/sns01
 
         imagePullPolicy: Always
 
