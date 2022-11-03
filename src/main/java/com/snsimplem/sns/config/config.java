@@ -126,6 +126,7 @@ public static void main(String[] args){
                 .withCredentials(new DefaultAWSCredentialsProviderChain())
                 .build();
     }
+  
 
     //    private static final DynamoDBMapperConfig.TableNameResolver TABLE_NAME_RESOLVER = (className, config) -> "Data";
     public ClientConfiguration getClientConfiguration() {
@@ -135,6 +136,7 @@ public static void main(String[] args){
         cfg.setProxyPort(8099);
         return cfg;
     }
+    Regions region = Regions.AP_SOUTH_1;
 
     private AmazonSNSClient getAmazonDynamoDBLocalClient(Regions region) {
         return (AmazonSNSClient) AmazonSNSClientBuilder.standard()
