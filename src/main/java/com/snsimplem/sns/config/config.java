@@ -138,13 +138,15 @@ public static void main(String[] args){
     }
     Regions region = Regions.AP_SOUTH_1;
 
-    private AmazonSNSClient getAmazonDynamoDBLocalClient(Regions region) {
+    private AmazonSNSClient getAmazonDynamoDBLocalClient() {
+      Regions region = Regions.AP_SOUTH_1;
         return (AmazonSNSClient) AmazonSNSClientBuilder.standard()
                 .withRegion(region).build();
     }
 
     // This Client is configured for Non-Local Profile for Dev, QA, Perf and Prod Profiles on EC2 Instances.
-    private AmazonSNSClient getAmazonDynamoDBClient(Regions region) {
+    private AmazonSNSClient getAmazonDynamoDBClient() {
+      Regions region = Regions.AP_SOUTH_1;
         return (AmazonSNSClient) AmazonSNSClientBuilder.standard()
                 .withCredentials(new DefaultAWSCredentialsProviderChain())
                 .withClientConfiguration(getClientConfiguration()).withRegion(region).build();
