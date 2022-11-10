@@ -136,7 +136,7 @@ public static void main(String[] args){
         cfg.setProxyPort(8099);
         return cfg;
     }
-    Regions region = Regions.AP_SOUTH_1;
+    
 
     private AmazonSNSClient getAmazonDynamoDBLocalClient() {
       Regions region = Regions.AP_SOUTH_1;
