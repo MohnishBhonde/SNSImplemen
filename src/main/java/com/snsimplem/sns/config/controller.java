@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class controller {
     @Autowired
     public AmazonSNSClient SnsClient;
-    String TOPIC_ARN="arn:aws:sns:ap-south-1:328400827861:SNSImplementation";
+    String TOPIC_ARN="arn:aws:sns:ap-south-1:473379292965:SNSImplementation";
 
     @GetMapping("/addSubscription/{email}")
     public String addSubscription(@PathVariable String email){
