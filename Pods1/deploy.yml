@@ -1,47 +1,47 @@
-/*
-apiVersion: apps/v1
 
-kind: Deployment
+#apiVersion: apps/v1
 
-metadata:
+#kind: Deployment
 
-  name: sns-deploy
+#metadata:
 
-  labels:
+ # name: sns-deploy
 
-    app: web
+  #labels:
 
-spec:
+   # app: web
 
-  replicas: 1
+#spec:
 
-  selector:
+ # replicas: 1
 
-    matchLabels:
+  #selector:
 
-      app: web
+   # matchLabels:
 
-  template:
+    #  app: web
 
-    metadata:
+  #template:
 
-      labels:
+   # metadata:
 
-        app: web
+    #  labels:
 
-    spec:
+     #   app: web
 
-      terminationGracePeriodSeconds: 1
+    #spec:
 
-      containers:
+     # terminationGracePeriodSeconds: 1
 
-      - name: sns-pod
+      #containers:
 
-        image: mohnishbhonde/sns01
+      #- name: sns-pod
 
-        imagePullPolicy: Always
+       # image: mohnishbhonde/sns01
 
-        ports:
+        #imagePullPolicy: Always
 
-        - containerPort: 8081
-*/
+        #ports:
+
+        #- containerPort: 8081
+
