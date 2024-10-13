@@ -31,7 +31,7 @@ public class SnsApplication {
 				"SNS Implementation",
 				"1.0",
 				"Free to use",
-				new springfox.documentation.service.Contact("Mohnish Bhonde","","mohnish2351999@gmail.com"),
+				new springfox.documentation.service.Contact("Mohnish Bhonde","","mohnishbhonde@gmail.com"),
 				"Api License",
 				"http://localhost:3000",
 				Collections.emptyList());
